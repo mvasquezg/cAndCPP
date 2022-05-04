@@ -5,8 +5,8 @@
 */
 class FahrenheitCelsius{
     public static void Main(string[] args){
-        int fahrenheit, celsius;
-        int lower, upper, step;
+        float fahrenheit, celsius;
+        float lower, upper, step;
 
         lower=0;
         upper=300;
