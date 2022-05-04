@@ -7,8 +7,8 @@
 using namespace std;
 
 int main(){
-    int fahrenheit, celsius;
-    int lower, upper, step;
+    float fahrenheit, celsius;
+    float lower, upper, step;
 
     lower=0;
     upper=300;
