@@ -5,12 +5,12 @@
 */
 public class FahrenheitCelsius{
     public static void main(String[] args){
-        int fahrenheit, celsius;
-        int lower, upper, step;
+        float fahrenheit, celsius;
+        float lower, upper, step;
 
-        lower=0;
-        upper=300;
-        step=20;
+        lower=0.0f;
+        upper=300.0f;
+        step=20.0f;
 
         fahrenheit=lower;
 
