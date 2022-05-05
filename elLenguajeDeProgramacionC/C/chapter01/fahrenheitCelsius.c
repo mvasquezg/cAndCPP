@@ -5,6 +5,7 @@
 */
 #include<stdio.h>
 void main(){
+    /*Primera parte del programa con while
     float fahrenheit, celsius;
     float lower, upper, step;
 
@@ -19,5 +20,13 @@ void main(){
         celsius=(5.0/9.0)*(fahrenheit-32);
         printf("%3.0f%18.1f\n", fahrenheit, celsius);
         fahrenheit=fahrenheit+step;
+    }*/
+
+    int fahrenheit;
+   
+    printf("%s\t%s\n", "Fahrenheit", "Celsius");
+    for(fahrenheit=0; fahrenheit<=300; fahrenheit+=20){
+        printf("%3d%19.1f\n", fahrenheit, (5.0/9.0)*(fahrenheit-32));
     }
+
 }
