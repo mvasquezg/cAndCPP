@@ -7,6 +7,7 @@
 using namespace std;
 
 int main(){
+    /*Programa con ciclo while
     float fahrenheit, celsius;
     float lower, upper, step;
 
@@ -21,6 +22,13 @@ int main(){
         celsius=5*(fahrenheit-32)/9;
         cout<<fahrenheit<<"\t\t\t"<<celsius<<"\n";
         fahrenheit=fahrenheit+step;
+    }*/
+
+    int fahrenheit;
+    cout<<"Fahrenheit\t\tCelsius\n";
+    for(fahrenheit=0; fahrenheit<=300; fahrenheit+=20){
+        cout<<fahrenheit<<"\t\t\t"<<(5.0/9.0)*(fahrenheit-32)<<"\n";
+
     }
 
     return 0;
