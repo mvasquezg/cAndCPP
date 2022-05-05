@@ -8,6 +8,7 @@ function showMessage(){
 }
 
 function calculateFahtoCels(){
+        /*Codigo con ciclo while
         var fahrenheit, celsius;
         var lower, upper, step;
 
@@ -23,7 +24,16 @@ function calculateFahtoCels(){
             celsius=5*(fahrenheit-32)/9;
             idTabDegrees.innerHTML+="<tr><td>"+fahrenheit.toFixed(2)+"</td><td>"+celsius.toFixed(2)+"</td></tr>";
             fahrenheit=fahrenheit+step;
+        }*/
+
+        var fahrenheit, celsius;
+   
+        idTabDegrees.innerHTML+="<tr><th>Fahrenheit</th><th>Celsius</th></tr>";
+        for(fahrenheit=0; fahrenheit<=300; fahrenheit+=20){
+            celsius=5*(fahrenheit-32)/9;
+            idTabDegrees.innerHTML+="<tr><td>"+fahrenheit.toFixed(2)+"</td><td>"+celsius.toFixed(2)+"</td></tr>";
         }
+        idBtnClean.style.display="block";    
 }
 
 function cleanTable(){
