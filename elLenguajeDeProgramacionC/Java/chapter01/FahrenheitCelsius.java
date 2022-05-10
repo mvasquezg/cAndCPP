@@ -4,6 +4,10 @@
 *Programa 02: Conversion de grados fahrenheit a grados centigrados
 */
 public class FahrenheitCelsius{
+    public static final int LOWER=0;
+    public static final int UPPER=300;
+    public static final int STEP=20;
+    
     public static void main(String[] args){
         
         /*Codigo con sentencia While
@@ -26,7 +30,7 @@ public class FahrenheitCelsius{
         int fahrenheit;
    
         System.out.print("Fahrenheit\t\tCelsius\n");
-        for(fahrenheit=0; fahrenheit<=300; fahrenheit+=20){
+        for(fahrenheit=LOWER; fahrenheit<=UPPER; fahrenheit+=STEP){
             System.out.print(fahrenheit+"\t\t\t"+(5.0/9.0)*(fahrenheit-32)+"\n");
         }
 
