@@ -4,8 +4,15 @@
 *Programa 02: Conversion de grados fahrenheit a grados centigrados
 */
 class FahrenheitCelsius{
+    //Constant
+    const int  LOWER=0;
+    const int UPPER=300;
+    const int STEP=20;
+    
     public static void Main(string[] args){
-        
+
+
+
         /*Codigo con sentencia While
         float fahrenheit, celsius;
         float lower, upper, step;
@@ -26,9 +33,12 @@ class FahrenheitCelsius{
         int fahrenheit;
    
         System.Console.Write("Fahrenheit\t\tCelsius\n");
-        for(fahrenheit=0; fahrenheit<=300; fahrenheit+=20){
+        /*for(fahrenheit=0; fahrenheit<=300; fahrenheit+=20){
+            System.Console.Write(fahrenheit+"\t\t\t"+(5.0/9.0)*(fahrenheit-32)+"\n");
+        }*/
+
+        for(fahrenheit=LOWER; fahrenheit<=UPPER; fahrenheit+=STEP){
             System.Console.Write(fahrenheit+"\t\t\t"+(5.0/9.0)*(fahrenheit-32)+"\n");
         }
-
     }///end main 
 }//FahrenheitCelsius
