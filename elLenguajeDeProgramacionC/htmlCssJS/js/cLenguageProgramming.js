@@ -1,3 +1,8 @@
+//constant
+const LOWER=0;
+const UPPER=300;
+const STEP=20;
+
 var idTabDegrees=document.getElementById("idTabDegrees");           
 var idBtnClean=document.getElementById("idBtnClean");
 
@@ -29,7 +34,11 @@ function calculateFahtoCels(){
         var fahrenheit, celsius;
    
         idTabDegrees.innerHTML+="<tr><th>Fahrenheit</th><th>Celsius</th></tr>";
-        for(fahrenheit=0; fahrenheit<=300; fahrenheit+=20){
+        /*for(fahrenheit=0; fahrenheit<=300; fahrenheit+=20){
+            celsius=5*(fahrenheit-32)/9;
+            idTabDegrees.innerHTML+="<tr><td>"+fahrenheit.toFixed(2)+"</td><td>"+celsius.toFixed(2)+"</td></tr>";
+        }*/
+        for(fahrenheit=LOWER; fahrenheit<=UPPER; fahrenheit+=STEP){
             celsius=5*(fahrenheit-32)/9;
             idTabDegrees.innerHTML+="<tr><td>"+fahrenheit.toFixed(2)+"</td><td>"+celsius.toFixed(2)+"</td></tr>";
         }
