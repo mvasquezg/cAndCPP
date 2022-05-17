@@ -9,10 +9,17 @@
 using namespace std;
 
 int main(){
-    int character;
+    
+    long characterNumbers=0;
+    //int character;
 
-    while((character=cin.get())!=EOF){
-        cout.put(character);
-        
+    /*while((character=cin.get())!=EOF){
+        cout.put(character);    
+    }*/
+
+    while(cin.get()!=EOF){
+        ++characterNumbers;
+        cout<<characterNumbers<<" ";
     }
+    cout<<"\n";
 }//end main
