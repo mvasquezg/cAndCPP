@@ -6,12 +6,20 @@
 #include<stdio.h>
 
 void main(){
-    int c;
+   /* int c;
 
     c=getchar();
 
     while(c!=EOF){
         putchar(c);
         c=getchar();
+    }*/
+
+    long characterNumbers=0;
+
+    while(getchar()!=EOF){
+        ++characterNumbers;
+        printf("%ld ", characterNumbers);
     }
+    printf("\n");
 }
